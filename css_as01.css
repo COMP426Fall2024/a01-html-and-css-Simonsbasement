@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    z-index: 0;
+}
+
+body {
+    color: black;
+    background-color: rgb(0, 171, 194);
+}
+
+div.Upper {
+    height: 95vh;
+    overflow: auto;
+}
+
+div.Header {
+    border-bottom: 3px solid rgb(0, 0, 0);
+}
+div.Header > h1.Text {
+    padding: 0px 0px 4px 5px; 
+}
+span.Griffin{
+    color: rgb(255, 230, 0);
+}
+
+div.Main > div.Text{
+    padding: 0px 0px 0px 5px;
+    font-size: 18px;
+}
+div.Main > h2.Subsection{
+    padding: 0px 0px 0px 5px;
+    border-bottom: 3px solid rgb(0, 0, 0);
+}
+
+div.Footer {
+    height: 4vh;
+    border-top: 3px solid rgb(0, 0, 0);
+}
+div.Footer > div.Text {
+    padding: 1px 0px 0px 5px; 
+}
