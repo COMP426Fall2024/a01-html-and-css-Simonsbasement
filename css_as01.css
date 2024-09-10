@@ -1,42 +1,119 @@
-*{
-    padding: 0;
+* {
     margin: 0;
     z-index: 0;
+}
+:not(ul){
+    /* Padding is used by ul ::marker. Setting it to 0 will hide the marker (bad). */
+    padding: 0;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+div.Massive {
+    width: 100%;
+    height: 100vh;
+}
+
+ul {
+    /* Disc means "solid dots" as the ::marker. */
+    list-style-type: disc;
+    padding: 0px 0px 0px 2vw;
+}
+li {
+    display: list-item;
 }
 
 body {
     color: black;
-    background-color: rgb(0, 171, 194);
+    background-color: #00ABC2;
 }
 
 div.Upper {
     height: 95vh;
+    width: 100vw;
     overflow: auto;
+    font-family: sans-serif;
+    font-size: 16px;
 }
 
 div.Header {
-    border-bottom: 3px solid rgb(0, 0, 0);
+    border-bottom: 3px solid #000000;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
 }
-div.Header > h1.Text {
+div.Header h1.Text {
     padding: 0px 0px 4px 5px; 
+    margin: 0;
 }
-span.Griffin{
-    color: rgb(255, 230, 0);
+span.Griffin {
+    color: #FFE600;
+}
+span.Griffin:hover {
+    color: #FF2727;
+}
+span.Lion {
+    color: #ffa600;
+}
+span.Lion:hover {
+    color: #FF2727;
+}
+span.Eagle {
+    color: #0004ff;
+}
+span.Eagle:hover {
+    color: #FF2727;
 }
 
-div.Main > div.Text{
+div.Main div.Text{
     padding: 0px 0px 0px 5px;
-    font-size: 18px;
 }
-div.Main > h2.Subsection{
+div.Main h2.Subsection{
     padding: 0px 0px 0px 5px;
-    border-bottom: 3px solid rgb(0, 0, 0);
+    border-bottom: 3px solid #000000;
 }
+
+div.container {
+    display: flex;
+    width: 97vw;
+}
+
+ul.t0 {
+    list-style-position: inside;
+    float: left;
+    white-space: nowrap;
+}
+ul.t0 > li::marker {
+    color: #FF2727;
+}
+ul.t1 > li::marker {
+    color: #C5DB00;
+}
+
+table[id$="_grid"] {
+    margin-left: 1vw;
+    float: left;
+}
+table[id$="_grid"] td {
+    /* 50% of the width of the whole table -> 2 columns. */
+    width: 50%
+}
+table[id$="_grid"] img {
+    margin: 0px auto 0px auto;
+    /* 100% of the cell the image is in. */
+    width: 100%;
+}
+
+select[class$="_parts"] {
+    margin: 0px 0px 0px 5px;
+}
+
 
 div.Footer {
     height: 4vh;
-    border-top: 3px solid rgb(0, 0, 0);
+    border-top: 3px solid #000000;
 }
-div.Footer > div.Text {
+div.Footer div.Text {
     padding: 1px 0px 0px 5px; 
 }
